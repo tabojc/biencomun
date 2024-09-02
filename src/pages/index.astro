@@ -1,16 +1,22 @@
 ---
+// index.astro
+import { notFound } from "astro:i18n";
+import Layout from "../Layouts/Layout.astro";
+import LayoutMaintanece from "../Layouts/LayoutMaintanece.astro";
 
+const SITE_PUBLISHED = import.meta.env.SITE_PUBLISHED==='Y' || false;
+
+console.log({SITE_PUBLISHED});
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+{(SITE_PUBLISHED) ? 
+	(
+		<Layout title="Astro">
+			<h1>Astro1</h1>
+		</Layout>
+	): 
+	(
+		<LayoutMaintanece title="Astro">
+			<h1>Astro1</h1>
+		</LayoutMaintanece>
+	)
+}

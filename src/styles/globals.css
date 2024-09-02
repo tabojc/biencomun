@@ -1,0 +1,30 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+:root {
+  --bg-red-color: #c21807;
+  --bg-white-color: #ffffff;
+  --fore-gray-color: #999999;
+}
+/*
+Color Rojo Principal: #c21807 (Hexadecimal)
+Color Blanco del Fondo: #ffffff (Hexadecimal)
+Color Gris Claro del Texto: #999999 (Hexadecimal)
+*/  
+/*
+bg-[#c21807] // Color de fondo rojo
+text-[#ffffff] // Color de texto blanco
+*/
+
+.wave {
+    position: relative;
+    background: #c21807;
+    height: 200px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
+  }
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #c21807;
+ }
