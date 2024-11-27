@@ -31,5 +31,5 @@ export const testimonialsSection = {
   ],
   visual: "customer-testimonials-image.jpg",
   callToAction: "Join Our Growing Community of Satisfied Customers",
-  button: "Get Started",
+  button: "Ven con nosotros",
 };
