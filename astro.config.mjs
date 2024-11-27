@@ -8,5 +8,5 @@ export default defineConfig({
   integrations: [tailwind(), react()],
   site: "https://biencomun.genteintegra.com",
   base: "/",
-  output: 'hybrid',
+  output: 'static',
 });
