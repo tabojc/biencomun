@@ -7,5 +7,6 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: "https://biencomun.genteintegra.com",
-  base: "/"
+  base: "/",
+  output: 'hybrid',
 });
